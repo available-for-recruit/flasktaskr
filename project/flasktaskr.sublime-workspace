@@ -1,0 +1,382 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/login.html",
+			"settings":
+			{
+				"buffer_size": 653,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/_base.html",
+			"settings":
+			{
+				"buffer_size": 516,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "_base.html"
+			}
+		},
+		{
+			"file": "run.py",
+			"settings":
+			{
+				"buffer_size": 42,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "run.py"
+			}
+		},
+		{
+			"file": "views.py",
+			"settings":
+			{
+				"buffer_size": 1285,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 96.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control setting",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"package control u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"list",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import package_control; package_control.__version__",
+			"mport package_control; package_control.__version__",
+			"function(1)",
+			"print(\"hello\")",
+			"python",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/pyimagesearch/RealPython/flasktaskr",
+		"/home/pyimagesearch/RealPython/flasktaskr/project",
+		"/home/pyimagesearch/RealPython/flasktaskr/project/static",
+		"/home/pyimagesearch/RealPython/flasktaskr/project/static/css",
+		"/home/pyimagesearch/RealPython/flasktaskr/project/templates"
+	],
+	"file_history":
+	[
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/plant_classification/pyimagesearch/rgbhistogram.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/plant_classification/classify.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/convolutions/convolutions.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/convolutions/convolve.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/digits/pyimagesearch/imutils.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/digits/pyimagesearch/dataset.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/digits/classify_video.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/digits/classify.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/eye_tracking/pyimagesearch/PupilDetector.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/eye_tracking/find_iris_center.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/eye_tracking/draw_utils.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/color_tracking/track.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/face_detection/detect_faces.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/webcam_face_detection/cam.py",
+		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/webcam_face_detection/cam_fps.py",
+		"/home/pyimagesearch/Books/Practical Python and OpenCV, 3rd Edition/code/chapter-07/color_histograms.py",
+		"/home/pyimagesearch/Books/Practical Python and OpenCV, 3rd Edition/code/chapter-07/grayscale_histogram.py",
+		"/home/pyimagesearch/Books/Practical Python and OpenCV, 3rd Edition/code/chapter-07/histogram_with_mask.py",
+		"/home/pyimagesearch/Books/Practical Python and OpenCV, 3rd Edition/code/chapter-07/equalize.py",
+		"/home/pyimagesearch/Books/Practical Python and OpenCV, 3rd Edition/code/chapter-06/abc.py",
+		"/home/pyimagesearch/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"radius",
+			"reshape",
+			"track",
+			"sigma",
+			"find_pupil",
+			"debug_index",
+			"resize",
+			"camera"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/_base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"auto_name": "_base.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "run.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "run.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "flasktaskr.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
