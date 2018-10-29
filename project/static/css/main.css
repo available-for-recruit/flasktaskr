@@ -68,9 +68,10 @@ label {
   padding: 0.5em;
 }
 
-.error {
-  background: #F0D6D6;
-  padding: 0.5em;
+.error  {
+    color:  red;
+    font-size:  .8em;
+    background-color: #FFFFFF;
 }
 
 .input-group {
@@ -133,4 +134,13 @@ label {
   margin: 0;
   text-decoration:none;
   position:relative;
+}
+
+.inline-form .input-group {
+  display: inline-block;
+  margin 10px 5px;
+}
+
+.input-group input {
+  width: 100%;
 }
