@@ -22,20 +22,20 @@ class AddTaskForm(Form):
 class RegisterForm(Form):
   name = StringField(
                      'Username',
-                     validators = [DataRequired(), Length(min=6, max = 25)]
+                     validators = [DataRequired(message='Invalid username.'), Length(min=6, max = 25)]
                      )
   email = StringField(
                       'Email',
-                      validators = [DataRequired(), Email(), Length(min = 6, max = 40)]
+                      validators = [DataRequired(message='Invalid email.'), Email(), Length(min = 6, max = 40)]
                       )
   password = PasswordField(
                            'Password',
-                           validators = [DataRequired(), Length(min = 6, max = 40)]
+                           validators = [DataRequired(message='Invalid password.'), Length(min = 6, max = 40)]
                            )
   confirm = PasswordField(
                           'Repeat Password',
-                          validators = [DataRequired(),
-                          EqualTo('password')]
+                          validators = [DataRequired(message='Invalid password.'),
+                          EqualTo('password',message='Passwords must match')]
                           )
 
 class LoginForm(Form):

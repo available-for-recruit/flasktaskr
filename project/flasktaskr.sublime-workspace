@@ -11,7 +11,7 @@
 			"file": "templates/login.html",
 			"settings":
 			{
-				"buffer_size": 472,
+				"buffer_size": 1023,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -20,7 +20,7 @@
 			"file": "templates/register.html",
 			"settings":
 			{
-				"buffer_size": 626,
+				"buffer_size": 1820,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -29,7 +29,7 @@
 			"file": "static/css/main.css",
 			"settings":
 			{
-				"buffer_size": 1937,
+				"buffer_size": 1967,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -48,7 +48,7 @@
 			"file": "templates/tasks.html",
 			"settings":
 			{
-				"buffer_size": 2747,
+				"buffer_size": 3306,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -67,7 +67,7 @@
 			"file": "views.py",
 			"settings":
 			{
-				"buffer_size": 4038,
+				"buffer_size": 4793,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -94,7 +94,7 @@
 			"file": "forms.py",
 			"settings":
 			{
-				"buffer_size": 1943,
+				"buffer_size": 2061,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -103,7 +103,7 @@
 			"file": "models.py",
 			"settings":
 			{
-				"buffer_size": 1263,
+				"buffer_size": 1290,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -113,6 +113,15 @@
 			"settings":
 			{
 				"buffer_size": 1101,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test.py",
+			"settings":
+			{
+				"buffer_size": 7591,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -185,6 +194,7 @@
 	],
 	"file_history":
 	[
+		"/home/pyimagesearch/RealPython/flasktaskr/project/templates/register.html",
 		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/plant_classification/pyimagesearch/rgbhistogram.py",
 		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/plant_classification/classify.py",
 		"/home/pyimagesearch/Books/Case Studies, 3rd Edition/code/convolutions/convolutions.py",
@@ -249,7 +259,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -258,15 +268,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 472,
+						"buffer_size": 1023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								472,
-								472
+								72,
+								72
 							]
 						],
 						"settings":
@@ -286,15 +296,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 626,
+						"buffer_size": 1820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								218
+								364,
+								364
 							]
 						],
 						"settings":
@@ -307,7 +317,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -316,15 +326,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1937,
+						"buffer_size": 1967,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1658,
-								1658
+								796,
+								796
 							]
 						],
 						"settings":
@@ -334,10 +344,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2568.0,
+						"translation.y": 1452.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -366,7 +376,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -375,15 +385,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2747,
+						"buffer_size": 3306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								527,
-								527
+								520,
+								520
 							]
 						],
 						"settings":
@@ -393,10 +403,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1336.0,
+						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -425,7 +435,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -434,15 +444,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4038,
+						"buffer_size": 4793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1621,
-								1621
+								2121,
+								2121
 							]
 						],
 						"settings":
@@ -452,7 +462,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1100.0,
+						"translation.y": 1914.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -471,8 +481,8 @@
 						"selection":
 						[
 							[
-								134,
-								134
+								231,
+								231
 							]
 						],
 						"settings":
@@ -483,7 +493,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -522,15 +532,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1943,
+						"buffer_size": 2061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								465,
-								465
+								1799,
+								1799
 							]
 						],
 						"settings":
@@ -541,7 +551,7 @@
 						"translation.y": 544.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -550,15 +560,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1263,
+						"buffer_size": 1290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								659,
-								659
+								1003,
+								1003
 							]
 						],
 						"settings":
@@ -566,10 +576,10 @@
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 198.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -598,7 +608,35 @@
 						"translation.y": 390.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6821,
+								6821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

@@ -24,6 +24,7 @@ def login_required(test):
             flash("You need to login first.")
             return redirect(url_for("login"))
     return wrap
+
 def flash_errors(form):
     for field, errors in form.errors.items():
         for error in errors:
@@ -42,7 +43,8 @@ def register():
     error = None
     form = RegisterForm(request.form)
     if request.method == "POST":
-        if form.validate_on_submit():
+        response = form.validate_on_submit()
+        if response:
             new_user = User(
                             form.name.data,
                             form.email.data,
@@ -56,9 +58,12 @@ def register():
             except IntegrityError:
                 error = "That username and/or email already exists."
                 return render_template("register.html", form=form, error=error)
+        else:
+            print("ERROR IS :{}, response is: {}".format(error, response))
     return render_template("register.html", form=form, error=error)
 
 @app.route("/logout/")
+@login_required
 def logout():
     session.pop("logged_in", None)
     session.pop("user_id", None)
@@ -79,9 +84,9 @@ def login():
                 flash("Welcome")
                 return redirect(url_for("tasks"))
             else:
-                error = "Invalid username or password"
+                error = "Invalid username or password."
         else:
-            error = "Both fields are required"
+            error = "'Invalid username or password.'"
     return render_template("login.html", form = form, error = error)
 
 # list tasks
