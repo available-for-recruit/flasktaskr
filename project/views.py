@@ -43,8 +43,7 @@ def register():
     error = None
     form = RegisterForm(request.form)
     if request.method == "POST":
-        response = form.validate_on_submit()
-        if response:
+        if form.validate_on_submit():
             new_user = User(
                             form.name.data,
                             form.email.data,
@@ -58,8 +57,6 @@ def register():
             except IntegrityError:
                 error = "That username and/or email already exists."
                 return render_template("register.html", form=form, error=error)
-        else:
-            print("ERROR IS :{}, response is: {}".format(error, response))
     return render_template("register.html", form=form, error=error)
 
 @app.route("/logout/")
@@ -85,8 +82,6 @@ def login():
                 return redirect(url_for("tasks"))
             else:
                 error = "Invalid username or password."
-        else:
-            error = "'Invalid username or password.'"
     return render_template("login.html", form = form, error = error)
 
 # list tasks
