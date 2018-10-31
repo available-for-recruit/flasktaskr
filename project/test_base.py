@@ -37,7 +37,7 @@ class AllTests(unittest.TestCase):
   def logout(self):
     return self.app.get("logout/", follow_redirects=True)
 
-  def register(self, name, email, password, confirm):
+  def register(self, name, email, password, confirm,):
     return self.app.post(
                          "register/",
                          data = dict(
@@ -48,6 +48,16 @@ class AllTests(unittest.TestCase):
                                      ),
                          follow_redirects = True
                          )
+
+  def create_admin_user(self):
+    new_user = User(
+                    name = "Superman",
+                    email = "admin@realpython.com",
+                    password = "allpowerful",
+                    role = "admin"
+                    )
+    db.session.add(new_user)
+    db.session.commit()
 
   def create_task(self):
     return self.app.post("add/",

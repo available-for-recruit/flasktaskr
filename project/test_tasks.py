@@ -50,7 +50,7 @@ class AllTestsTasks(test_base.AllTests):
     response = self.app.get("delete/1/", follow_redirects = True)
     self.assertIn(b"The task was deleted.", response.data)
 
-  def test_users_cannot_complete_tasks_that_are_not_created_by_them(self):
+  def test_users_cannot_delete_tasks_that_are_not_created_by_them(self):
     self.register("Michael", "michael@realpython.com", "python", "python")
     self.login("Michael", "python")
     self.app.get("tasks", follow_redirects = True)
@@ -59,9 +59,47 @@ class AllTestsTasks(test_base.AllTests):
     self.register("Fletcher", "fletcher@realpython.com", "python101", "python101")
     self.login("Fletcher", "python101")
     self.app.get("tasks/")
+    response = self.app.get("delete/1/", follow_redirects = True)
+    self.assertNotIn(b"The task was deleted.", response.data)
+    self.assertIn(b"You can only delete tasks that belong to you.", response.data)
+
+  def test_users_cannot_complete_tasks_that_are_not_created_by_them(self):
+    self.register("Michael", "michael@realpython.com", "python", "python")
+    self.login("Michael", "python")
+    self.app.get("tasks/", follow_redirects = True)
+    self.create_task()
+    self.logout()
+    self.register("Fletcher", "fletcher@realpython.com", "python101", "python101")
+    self.login("Fletcher", "python101")
+    self.app.get("tasks/")
     # complete first task
     response = self.app.get("complete/1/", follow_redirects = True)
     self.assertNotIn(b"The task was marked as complete.", response.data)
+    self.assertIn(b"You can only update tasks that belong to you.", response.data)
+
+  def test_admin_users_can_complete_tasks_that_are_not_created_by_them(self):
+    self.register("Michael", "michael@realpython.com", "python", "python")
+    self.login("Michael", "python")
+    self.app.get("tasks/", follow_redirects = True)
+    self.create_task()
+    self.logout()
+    self.create_admin_user()
+    self.login("Superman", "allpowerful")
+    self.app.get("tasks/", follow_redirects = True)
+    response = self.app.get("complete/1/", follow_redirects = True)
+    self.assertNotIn(b"You can only update tasks that belong to you.", response.data)
+
+  def test_admin_users_can_delete_tasks_that_are_not_created_by_them(self):
+    self.register("Michael", "michael@realpython.com", "python", "python")
+    self.login("Michael", "python")
+    self.app.get("tasks/", follow_redirects = True)
+    self.create_task()
+    self.logout()
+    self.create_admin_user()
+    self.login("Superman", "allpowerful")
+    self.app.get("tasks/", follow_redirects = True)
+    response = self.app.get("delete/1/", follow_redirects = True)
+    self.assertNotIn(b"You can only delete tasks that belong to you.", response.data)
 
 
 if __name__ == "__main__":

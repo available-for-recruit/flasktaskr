@@ -6,7 +6,12 @@ from models import User
 
 class AllTestsUsers(test_base.AllTests):
 
-
+  def test_default_user_role(self):
+    self.register("Johnny", "john@doe.com", "johnny", "johnny")
+    users = db.session.query(User).all()
+    print(users)
+    for user in users:
+      self.assertEquals(user.role, 'user')
 
   def test_users_cannot_login_unless_registered(self):
     response = self.login('foo', 'bar')
