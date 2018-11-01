@@ -10,5 +10,7 @@ SECRET_KEY = 'jabble' # should be very complex
 # define the full path for the database
 DATABASE_PATH = os.path.join(basedir, DATABASE)
 
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 # database URL
 SQLALCHEMY_DATABASE_URI = "sqlite:///" + DATABASE_PATH

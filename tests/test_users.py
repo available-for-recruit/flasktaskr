@@ -1,8 +1,8 @@
 import os
 import test_base
 
-from views import app, db
-from models import User
+from project import app, db
+from project.models import Task, User
 
 class AllTestsUsers(test_base.AllTests):
 
@@ -32,8 +32,9 @@ class AllTestsUsers(test_base.AllTests):
     self.assertIn(b"Please sign in to access your task list", response.data)
 
   def test_users_can_register(self):
+    self.app.get("register/", follow_redirects = True)
     response = self.register("Michael", "michael@realpython.com", "python", "python")
-    self.assertIn(b"Thanks for registering, Please login", response.data)
+    self.assertIn(b"Thanks for registering. Please login.", response.data)
 
   # Another way
   def test_user_registration(self):
@@ -44,7 +45,7 @@ class AllTestsUsers(test_base.AllTests):
                              "python",
                              "python"
                              )
-    self.assertIn(b"Thanks for registering, Please login", response.data)
+    self.assertIn(b"Thanks for registering. Please login.", response.data)
     response = self.register(
                              "Michael",
                              "michael@realpython.com",

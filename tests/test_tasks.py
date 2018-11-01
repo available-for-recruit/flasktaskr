@@ -1,8 +1,8 @@
 import os
 import test_base
 
-from views import app, db
-from models import User
+from project import app, db
+from project.models import Task, User
 
 class AllTestsTasks(test_base.AllTests):
 
@@ -39,7 +39,7 @@ class AllTestsTasks(test_base.AllTests):
     self.create_task()
     # complete first task
     response = self.app.get("complete/1/", follow_redirects = True)
-    self.assertIn(b"The task was marked as complete.", response.data)
+    self.assertIn(b"The task is complete. Nice.", response.data)
 
   def test_users_can_delete_tasks(self):
     self.register("Michael", "michael@realpython.com", "python", "python")
