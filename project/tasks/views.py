@@ -49,9 +49,10 @@ def closed_tasks():
 def tasks():
     return render_template(
         'tasks.html',
-        form=AddTaskForm(request.form),
-        open_tasks=open_tasks(),
-        closed_tasks=closed_tasks()
+        form = AddTaskForm(request.form),
+        open_tasks = open_tasks(),
+        closed_tasks = closed_tasks(),
+        username = session['name']
     )
 
 
