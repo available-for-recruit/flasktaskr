@@ -1,6 +1,7 @@
 import os
 import unittest
 
+from datetime import date
 from project  import app, db, bcrypt
 from project._config import basedir
 from project.models import Task, User
@@ -61,6 +62,30 @@ class AllTests(unittest.TestCase):
                     )
     db.session.add(new_user)
     db.session.commit()
+
+  def create_tasks_for_api(self):
+    self.app.get("tasks/", follow_redirects = True)
+    self.app.post("add/",
+                         data=dict(
+                                   name = "Run around in circles",
+                                   due_date = "10/22/2015",
+                                   priority = "10",
+                                   posted_date = "10/05/2015",
+                                   status = "1"
+                                   ),
+                         follow_redirects = True
+                         )
+    self.app.get("tasks/", follow_redirects = True)
+    self.app.post("add/",
+                         data=dict(
+                                   name = "Purchase Real Python",
+                                   due_date = "02/23/2016",
+                                   priority = "10",
+                                   posted_date = "02/07/2016",
+                                   status = "1"
+                                   ),
+                         follow_redirects = True
+                         )
 
   def create_task(self):
     return self.app.post("add/",
