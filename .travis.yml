@@ -13,4 +13,6 @@ deploy:
     secure: AugcGVmhAdXesBMjWAUk2efih8gAb+jHouvA7joJ5MoDqDa0hhBrVY4/QIArqhgC/HRS6cmB+VIMIuHNQMyyjrtkFaj0xcghBRSIfV2Oc6sL2gpNGgA5SVC7JZGkSVvd3iI19YSLmkIjucHsFuS8pOOwEdNBYMNgyqT6r6AqaKmGSFTvTMtoloffb+kA1rP345uoOcd8iBblagzy7+XAnYM1mUYji6xqYFEJcO9R6K9W5nPYnaWVO65gdv5Yx576TqG5v5Krq9iOL6bWLqghEJ2i1aj32U2N4oEUIj+SCEA95jTeGWn0Tu8vDsuGN5mHP+vdKgA8XmzOdrjLgQVj/Xf202E904y3X0ByVYy1tjD4n2UT2CvDNUxLuaYl9Cdwe6l/zSTiI/d4gk/lTkpZd0neNqyI2UOnbPM0YM/7cTMYYTvywTNWr2dLp0fvLD/ZrYgJh/NS5SOvAv0rMizBlBGMy+lnBfgui4xOXKi5dmXoEwjnuWhWJfN60fC10eie80IgzLA/DIBjOY2cgEq+AI2rpoBx24X4PLnTYUTS4GkiCZf/hW9bBQtNUz1zKSWOkHfCBtf/ogFc7x4ipP4ZZ2eUMK15weDo5AlbreO3SUgjl4OfIRnbqhgA9bC5M9AfQ0bEUKWTovt2bYCD0/dV5e11ntbzi3mxCiryS4d8aNU=
   app: vast-journey-29544
   on:
+    branch: master
+    python: '3.6'
     repo: available-for-recruit/flasktaskr
